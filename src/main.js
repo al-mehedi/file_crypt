@@ -56,6 +56,11 @@ window.addEventListener("DOMContentLoaded", () => {
       }, 2000)
     }
   })
+
+  // Closes splash screen
+  document.getElementById('close-sp').addEventListener('click', (e) => {
+    e.target.parentNode.parentNode.removeChild(e.target.parentNode)
+  })
 });
 
 function showProcess() {
